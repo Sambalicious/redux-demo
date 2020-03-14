@@ -1,6 +1,4 @@
 
-
-import React from 'react';
 import { BUY_ICECREAM } from './iceCreamTypes';
 
  export const buyIceCream = () => {

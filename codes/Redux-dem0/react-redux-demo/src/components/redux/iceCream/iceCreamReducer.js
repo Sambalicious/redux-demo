@@ -1,15 +1,14 @@
-import React from 'react';
+
 import { BUY_ICECREAM } from './iceCreamTypes';
 
 
-const initialstate = {
+const initialState = {
     numberOfIceCream: 20
 }
-
-const iceCreamreducer = (state = initialstate, action) => {
+ const iceCreamReducer = (state = initialState, action) => {
     switch (action.type) {
         case BUY_ICECREAM : return {
-            ...state, numberOfIceCream: state.numberOfIceCream - 1
+            ...state, numberOfIceCream: state.iceCream.numberOfIceCream - 1
         }
             
             break;
@@ -19,4 +18,4 @@ const iceCreamreducer = (state = initialstate, action) => {
     }
 }
 
-export default iceCreamreducer;
+export default iceCreamReducer;
