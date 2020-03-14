@@ -1,10 +1,10 @@
 import React from 'react';
-import {connect, useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import {buyIceCream} from './redux';
 
-const iceCreamContainer = () => {
+const IceCreamContainer =()=> {
         const numberOfIceCream = useSelector(state=> state.iceCream.numberOfIceCream);
-        const dispatch = useDispatch()
+        const dispatch = useDispatch();
     return ( 
         <div>
             <h1> Number of Ice Creams: {numberOfIceCream} </h1>
@@ -13,6 +13,5 @@ const iceCreamContainer = () => {
         </div>
      );
 }
-
+export default IceCreamContainer
  
-export default iceCreamContainer;
