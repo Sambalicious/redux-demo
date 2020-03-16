@@ -10,11 +10,8 @@ const initialState = {
         case BUY_ICECREAM : return {
             ...state, numberOfIceCream: state.numberOfIceCream - 1
         }
-            
-            break;
     
         default: return state
-            break;
     }
 }
 
